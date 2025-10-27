@@ -34,37 +34,39 @@ After installing Eclipse, you can select a workspace. The workspace is the direc
 
 [![Workspace selection](/assets/images/eclipse/workspace_selection.png)](/assets/images/eclipse/workspace_selection.png)
 
-Upon selecting a workspace, it will show a Welcome screen presenting you with mutliple options. For example, there is an option to start an interactive tutorial that shows you how to create a simple Hello-World application.
+Upon selecting a workspace, it will show a Welcome screen presenting you with multiple options. For example, there is an option to start an interactive tutorial that shows you how to create a simple Hello-World application.
 
 [![Workspace selection](/assets/images/eclipse/welcome.png)](/assets/images/eclipse/welcome.png)
 
-This article will show you how to create Java projects manually so you can close this Welcome screen by clicking on the `Hide` button on the top right of the Welcome tab.
+This article will show you how to create Java projects manually. So you can close this _Welcome_ screen by clicking on the `Hide` button on the top right of the _Welcome_ tab.
 
 <a id="creating">&nbsp;</a>
 ## Creating a Java Project
 
-After installing Eclipse you should have an empty workspace. In order to create a new Java project, click on the `File` toolbar in the top left corner of the Eclipse window and select `New` > `Java Project`.
+After installing Eclipse you should have an empty workspace. In order to create a new Java project:
+1. Click on the `File` toolbar in the top left corner of the Eclipse window
+2. Select `New` > `Java Project`.
 
 [![File > New > Java Project](/assets/images/eclipse/file_create_project.png)](/assets/images/eclipse/file_create_project.png)
 
-This will then open up a dialog window that allows you to configure your project. You will need to enter a name next to `Project name:` at the top. For example, you can choose the name `HelloWorld`. In the `Module` section at the bottom, disable the option `Create module-info.java file`. You can configure a custom Java installation (commonly referred to as the *JDK* or Java Development Kit) in the `JRE` box.
+This will open up a dialog window that allows you to configure your project. You will need to enter a name next to `Project name:` at the top. For example, you can choose the name `HelloWorld`. In the `Module` section at the bottom, disable the option `Create module-info.java file`. You can configure a custom Java installation (commonly referred to as the *JDK* or Java Development Kit) in the `JRE` box.
 
 [![Java project creation dialog](/assets/images/eclipse/create_java_project.gif)](/assets/images/eclipse/create_java_project.gif)
 
-This creates a Java project that is shown on the left side of the Eclipse window. When expanding this project, there should be a folder named `src`. Java classes can be created inside this directory by right-clicking on it and selecting `New` > `Class`.
+This creates a Java project, which is shown on the left side of the Eclipse window. When expanding this project, there should be a folder named `src`. Java classes can be created inside this directory by right-clicking on it and selecting `New` > `Class`.
 
 [![New > Class](/assets/images/eclipse/create_class.png)](/assets/images/eclipse/create_class.png)
 
-This opens a dialog similar to the project creation dialog. It allows specifying various options about the class you want to create. For now, you will need to enter a class name like `HelloWorld`. If you want to, you can also configure a package which can be used to group multiple classes together.
+This opens a dialog similar to the project creation dialog. It allows you to specify various options about the class you want to create. For now, you will need to enter a class name like `HelloWorld`. If you want to, you can also configure a package that can be used to group multiple classes together.
 
 [![Java class creation dialog](/assets/images/eclipse/java_class_creation.png)](/assets/images/eclipse/java_class_creation.png)
 
 <a id="content_assist">&nbsp;</a>
 ## Content Assist
 
-Eclipse can help you write Java code by automatically completing parts of it. When pressing the key combination `Ctrl`+`Space` (or `⌘`+`Space` on macOS or `Alt`+`/` on Chinese systems) while editing Java code, Eclipse automatically suggests ways to complete the code. These suggestions can be confirmed by pressing `Enter` or double-clicking on the suggestions.
+Eclipse can help you write Java code by automatically completing parts of it. When pressing the key combination `Ctrl`+`Space` (or `⌘`+`Space` on macOS or `Alt`+`/` on Chinese systems) while editing Java code, Eclipse automatically suggests ways to complete the code. These suggestions can be inserted by pressing `Enter` or double-clicking on them.
 
-For example, typing `main` in a class followed by pressing `Ctrl`+`Space` suggests adding a main method.
+For example, typing `main` in a class followed by pressing `Ctrl`+`Space` suggests adding a `main` method.
 
 [![Content assist suggesting a main method](/assets/images/eclipse/content_assist_main.png)](/assets/images/eclipse/content_assist_main.png)
 
@@ -116,17 +118,17 @@ As with Errors, Eclipse can also detect code that compiles but likely contains s
 <a id="debugging">&nbsp;</a>
 ## Debugging
 
-When a program doesn't do what you expect it to do, you might want to debug it. The process of debugging is explained in [this article](id:debugging). Eclipse provides a lot of functionality making it easy to debug Java applications.
+When a program isn't doing what you expect it to do, you might want to debug it. The process of debugging is explained in [this article](id:debugging). Eclipse provides a lot of functionality that makes it easy to debug Java applications.
 
 In order to debug an application, you need to set a breakpoint. When the program gets to executing the line with the breakpoint, it will temporarily stop ("suspend"), allow you to inspect its current state and step through the program. To set a breakpoint, you need to double-click on the area to the left of the line you want to suspend the program at. After doing that, a blue dot should appear there.
 
 [![A breakpoint next to source code](/assets/images/eclipse/breakpoint.png)](/assets/images/eclipse/breakpoint.png)
 
-When running a program normally, it will ignore all breakpoints. For debugging, you need to run the program in debug mode. This can be done by clicking on the green button with the bug icon [![The debug button](/assets/images/eclipse/debug_button.png)](/assets/images/eclipse/debug_button.png) next to the run button or using `Debug As` > `Java Application`.
+When running a program normally, it will ignore all breakpoints. For debugging, you need to run the program in debug mode. This can be done by clicking on the green button with the bug icon [![The debug button](/assets/images/eclipse/debug_button.png)](/assets/images/eclipse/debug_button.png) next to the run button, or by selecting `Debug As` > `Java Application`.
 
 [![The debug button next to run buttons](/assets/images/eclipse/debug_button_in_toolbar.png)](/assets/images/eclipse/debug_button_in_toolbar.png)
 
-When the program execution gets to a breakpoint in debug mode, Eclipse will ask you to switch to the Debug perspective. This perspective gives you more information about the program you are currently debugging so you likely want to do this and click on the `Switch` button.
+When the program encounters a breakpoint while running in debug mode, Eclipse will ask you to switch to the _Debug_ perspective. This perspective gives you more information about the program you are currently debugging. You will likely want to do this; click on the `Switch` button.
 
 [![Eclipse asking to switch to the Debug perspective](/assets/images/eclipse/debug_perspective_switch.png)](/assets/images/eclipse/debug_perspective_switch.png)
 
