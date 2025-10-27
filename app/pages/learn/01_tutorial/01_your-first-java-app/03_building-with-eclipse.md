@@ -143,7 +143,7 @@ You can execute one line using `Step Over` [![Step Over button](/assets/images/e
 <a id="generating">&nbsp;</a>
 ## Generating Code
 
-Sometimes you might need to write repetitive code that doesn't contain much business logic and can be generated using information from existing code. An example of this is getters/setters or `equals`/`hashCode`/`toString` methods which typically just need to access some fields. While it is often preferable to use [records](/learn/records), Eclipse allows comes with functionality to generate these pieces of repetitive code.
+Sometimes you might need to write repetitive code that doesn't contain much business logic and can be generated using information from existing code. An example of this is getters/setters or `equals`/`hashCode`/`toString` methods which typically just need to access some fields. While it is often preferable to use [records](/learn/records), Eclipse comes with functionality to generate these pieces of repetitive code.
 
 In order to do this, you first need to create a class with some fields you want to generate these methods for. In this example, we will create a `Person` class that stores the first name, last name and age of a person.
 ```java
@@ -160,7 +160,7 @@ When right-clicking in that class, there is an option called `Source` providing 
 
 [![Generate Getters and Setters](/assets/images/eclipse/context_generate_getters_setters.png)](/assets/images/eclipse/context_generate_getters_setters.png)
 
-This option should open up a new window allowing us to configure which fields we want to generate accessors for. In order to create accessors for all fields, use the `Select All` button. and click `Generate` on the bottom right. 
+This option should open up a new window allowing us to configure which fields we want to generate accessors for. In order to create accessors for all fields, use the `Select All` button and click `Generate` on the bottom right. 
 
 [![Generate Getters and Setters](/assets/images/eclipse/getter_setter_modal.png)](/assets/images/eclipse/getter_setter_modal.png)
 
@@ -252,11 +252,11 @@ To generate that method, select `Generate toString()...` in the `Source` menu.
 
 [![Generate toString](/assets/images/eclipse/context_tostring.png)](/assets/images/eclipse/context_tostring.png)
 
-As before, this opens a window allowing to specify options on how exactly the code should be generated.
+As before, this opens a window that allows you to specify options that determine how exactly the code should be generated.
 
 [![Options for toString](/assets/images/eclipse/tostring_options.png)](/assets/images/eclipse/tostring_options.png)
 
-Using the `Generate` button, Eclipse generates the `toString` method as it did with the other methods before.
+By pressing the `Generate` button, you tell Eclipse to generate the `toString` method as it did with the other methods before.
 ```java
 import java.util.Objects;
 
@@ -311,7 +311,7 @@ public class Person {
 <a id="refactoring">&nbsp;</a>
 ## Refactoring
 
-When working on Java applications, it is often necessary to change existing code in various ways while preserving functionality. Eclipse supports developers doing that by providing various refactoring options. An example of that is renaming class, methods or fields. This can be done by clicking on a class, method or variable name, right-clicking and selecting `Refactor` > `Rename`.
+When working on Java applications, it is often necessary to change existing code in various ways while preserving functionality. Eclipse supports developers in this task by providing various refactoring options. One refactoring operation is that of renaming a class, or some methods or fields. This operation can be completed by clicking on a class, method or variable name, right-clicking on it, and selecting `Refactor` > `Rename`.
 
 [![Rename context menu](/assets/images/eclipse/context_rename.png)](/assets/images/eclipse/context_rename.png)
 
